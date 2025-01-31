@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Site E-commerce",
+    "description": "Plateforme de vente en ligne avec système de paiement sécurisé",
+    "technologies": ["React", "Node.js", "Stripe"],
+    "url": "#",
+    "image": "/images/projects/0.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Application Mobile",
+    "description": "Application cross-platform pour gestion de tâches",
+    "technologies": ["React Native", "Expo", "Firebase"],
+    "url": "#",
+    "image": "/images/projects/1.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Dashboard Analytics",
+    "description": "Tableau de bord de visualisation de données en temps réel",
+    "technologies": ["Next.js", "Chart.js", "Supabase"],
+    "url": "#",
+    "image": "/images/projects/2.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Plateforme SaaS",
+    "description": "Solution SaaS pour gestion de projets",
+    "technologies": ["Vue.js", "NestJS", "PostgreSQL"],
+    "url": "#",
+    "image": "/images/projects/3.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Réseau Social",
+    "description": "Plateforme de partage et de discussion",
+    "technologies": ["React", "GraphQL", "MongoDB"],
+    "url": "#",
+    "image": "/images/projects/4.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Marketplace",
+    "description": "Place de marché pour artisans locaux",
+    "technologies": ["Next.js", "Strapi", "Stripe"],
+    "url": "#",
+    "image": "/images/projects/5.jpg"
+  }
+]
