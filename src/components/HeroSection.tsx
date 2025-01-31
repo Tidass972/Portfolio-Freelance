@@ -16,8 +16,8 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({
-  name = "David Dupont",
-  tagline = "Transformez vos idées en solutions numériques",
+  name = "David Debarieux",
+  tagline = "Transformez votre activité avec un site vitrine irrésistible, conçu pour attirer et fidéliser vos clients.",
   backgroundImage = "/images/hero.jpg"
 }: HeroSectionProps) {
   return (

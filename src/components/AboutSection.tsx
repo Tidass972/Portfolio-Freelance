@@ -11,7 +11,7 @@ export default function AboutSection() {
           >
             <Image
               src="/images/Codeur.jpg"
-              alt="David Dupont - Développeur Web Full Stack"
+              alt="David Debarieux - Développeur Web Front-end"
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
               priority
@@ -27,11 +27,11 @@ export default function AboutSection() {
             </h2>
             
             <div className="space-y-6">
-              <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                {"Développeur web full-stack avec 5 ans d'expérience, je me spécialise dans la création "}
-                {"d'applications web modernes et performantes. Passionné par les nouvelles technologies, "}
-                {"j'aime relever des défis techniques et créer des expériences utilisateur exceptionnelles."}
-              </p>
+            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+  {"Développeur front-end expérimenté, spécialisé dans la création d'interfaces web modernes et performantes. "}
+  {"Expert en technologies web actuelles, je conçois des expériences utilisateur intuitives et engageantes, "}
+  {"tout en assurant performance et réactivité des applications."}
+</p>
               
               <div className="grid grid-cols-2 gap-6">
                 {/* Compétences clés */}

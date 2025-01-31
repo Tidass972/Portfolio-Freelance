@@ -8,22 +8,22 @@ const services = [
   {
     icon: <Code className="w-8 h-8" />,
     title: "Développement Front-end",
-    description: "Création d'interfaces utilisateur modernes et performantes avec les dernières technologies web."
+    description: "Conception d'interfaces utilisateur modernes, rapides et adaptées à tous les appareils, grâce aux technologies web les plus récentes."
   },
   {
     icon: <Cpu className="w-8 h-8" />,
-    title: "Développement Back-end",
-    description: "Construction d'architectures robustes et scalables pour vos applications web."
+    title: "Accessibilité Web",
+    description: "Garantissez un site inclusif et conforme aux standards d’accessibilité pour toucher un public plus large et améliorer votre image."
   },
   {
     icon: <Rocket className="w-8 h-8" />,
     title: "Optimisation SEO",
-    description: "Amélioration des performances et du classement de votre site sur les moteurs de recherche."
+    description: "Boostez la visibilité de votre site sur les moteurs de recherche avec des performances optimales et un contenu stratégique."
   },
   {
     icon: <Search className="w-8 h-8" />,
     title: "Audit Technique",
-    description: "Analyse complète de votre application pour identifier et résoudre les problèmes techniques."
+    description: "Diagnostic approfondi de votre application pour détecter et corriger les problèmes impactant vos performances."
   }
 ]
 

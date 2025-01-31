@@ -7,7 +7,7 @@ import { CalendarIcon } from "@radix-ui/react-icons"
 const experiences = [
   {
     company: "Tech Innovators",
-    position: "Développeur Full Stack",
+    position: "Développeur Front-end",
     startDate: "2023-01",
     endDate: "Présent",
     description: "Développement d'applications web modernes avec React et Node.js",

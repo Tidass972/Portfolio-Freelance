@@ -14,7 +14,7 @@ const technologies = [
     ]
   },
   {
-    category: "Backend",
+    category: "Backend (encours d'appretissage)",
     items: [
       { name: "Node.js", icon: "🟢" },
       { name: "Express", icon: "🚀" },

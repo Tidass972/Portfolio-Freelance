@@ -77,7 +77,7 @@ const AnimatedHeader = React.forwardRef<HTMLDivElement, AnimatedHeaderProps>(
         left: "0%",
         transition: {
           delay: letters.length * delay,
-          duration: 0.8,
+          duration: 6.9,
           ease: "easeOut"
         }
       }

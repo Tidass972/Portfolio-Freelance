@@ -48,7 +48,7 @@ const skills: Skill[] = [
   },
   {
     name: "GraphQL",
-    level: 55,
+    level: 25,
     icon: "graphql.svg",
     description: "API modernes et flexibles pour les applications web",
     color: "linear-gradient(to bottom, #FF69B4, #8B008B)"
