@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   compress: true,
   productionBrowserSourceMaps: false,
   poweredByHeader: false,
@@ -30,9 +29,20 @@ const nextConfig = {
     minimumCacheTTL: 60,
   },
   experimental: {
-    appDir: true,
-    serverActions: true,
-    turbo: true
+    serverActions: {
+      enabled: true
+    },
+    turbo: {
+      resolveAlias: true,
+      loaders: {
+        '.md': [
+          {
+            loader: '@mdx-js/loader',
+            options: {}
+          }
+        ]
+      }
+    }
   },
   headers: async () => [
     {
