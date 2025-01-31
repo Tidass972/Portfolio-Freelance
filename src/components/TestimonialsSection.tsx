@@ -37,7 +37,11 @@ export default function TestimonialsSection() {
             <Card key={index} className="p-8 hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-2 border border-gray-200 dark:border-gray-800 rounded-xl">
               <div className="flex items-center gap-4 mb-6">
                 <Avatar className="w-20 h-20 border-4 border-white dark:border-gray-900 shadow-lg relative before:absolute before:-inset-2 before:rounded-full before:bg-white/20 before:dark:bg-gray-900/20 before:blur-sm">
-                  <AvatarImage src={testimonial.image} className="object-cover" />
+                  <AvatarImage 
+                    src={testimonial.image} 
+                    alt={`Avatar de ${testimonial.name}`}
+                    className="object-cover" 
+                  />
                 </Avatar>
                 <div>
                   <h3 className="font-semibold">{testimonial.name}</h3>

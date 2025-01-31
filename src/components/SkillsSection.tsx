@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 interface Skill {
   name: string;
@@ -91,11 +92,13 @@ export default function SkillsSection() {
                       boxShadow: `0 4px 6px -1px ${gradientColor}, 0 2px 4px -2px ${gradientColor}`
                     }}
                   >
-                    <img 
-                      src={`/images/skills/${skill.icon}`}
-                      alt={skill.name}
-                      className="w-6 h-6"
-                    />
+<Image
+  src={skill.icon}
+  alt={skill.name}
+  width={48}
+  height={48}
+  className="object-contain"
+/>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold">{skill.name}</h3>
