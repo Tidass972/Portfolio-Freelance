@@ -15,7 +15,7 @@ const firaCode = Fira_Code({
 
 export const metadata: Metadata = {
   title: "Portfolio Développeur Web",
-  description: "Portfolio professionnel d'un développeur web full-stack spécialisé en création de sites modernes et performants",
+  description: "Portfolio professionnel d'un développeur web front-end spécialisé en création de sites modernes et performants",
 };
 
 export default function RootLayout({
