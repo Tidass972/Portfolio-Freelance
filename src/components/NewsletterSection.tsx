@@ -27,7 +27,7 @@ export function NewsletterSection() {
               />
               <Button type="submit">
                 <Mail className="mr-2 h-4 w-4" />
-                S'abonner
+                {"S'abonner"}
               </Button>
             </form>
             <p className="text-sm text-muted-foreground mt-3">
