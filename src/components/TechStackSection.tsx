@@ -14,7 +14,7 @@ const technologies = [
     ]
   },
   {
-    category: "Backend (encours d'appretissage)",
+    category: "Backend (en cours d&#39;apprentissage)",
     items: [
       { name: "Node.js", icon: "🟢" },
       { name: "Express", icon: "🚀" },
@@ -42,7 +42,7 @@ export function TechStackSection() {
             Mon Stack Technique
           </h2>
           <p className="text-muted-foreground">
-            Les technologies que j'utilise pour créer des solutions modernes
+            Les technologies que j&#39;utilise pour créer des solutions modernes
           </p>
         </div>
 
