@@ -50,10 +50,14 @@ export function OpenSourceSection() {
                 {project.description}
               </p>
 
-              <Button asChild variant="outline" className="w-full hover:scale-105 transition-transform duration-200">
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  Voir sur GitHub
-                </a>
+              <Button 
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="outline" 
+                className="w-full hover:scale-105 transition-transform duration-200"
+              >
+                Voir sur GitHub
               </Button>
             </Card>
           ))}
