@@ -3,6 +3,7 @@ import typography from "@tailwindcss/typography";
 import forms from "@tailwindcss/forms";
 import plugin from "tailwindcss/plugin";
 import { fontFamily } from "tailwindcss/defaultTheme";
+import animate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -117,7 +118,7 @@ export default {
   plugins: [
     typography,
     forms,
-    require("tailwindcss-animate"),
+    animate,
     plugin(({ addBase, addUtilities }) => {
       addBase({
         ":root": {
