@@ -90,17 +90,34 @@ export function LogoCarousel({ columns = 2, logos }: LogoCarouselProps) {
   const distributeLogos = useCallback(
     (logos: Logo[]) => {
       console.log('Distributing logos into columns');
+      if (!logos || logos.length === 0) {
+        console.error('No logos provided for distribution');
+        return [];
+      }
+      
       const shuffled = [...logos].sort(() => Math.random() - 0.5);
       const result: Logo[][] = Array.from({ length: columns }, () => []);
 
+      if (!result || result.length === 0) {
+        console.error('Failed to initialize result array');
+        return [];
+      }
+
       shuffled.forEach((logo, index) => {
-        result[index % columns].push(logo);
+        const columnIndex = index % columns;
+        if (result[columnIndex]) {
+          result[columnIndex].push(logo);
+        }
       });
 
       const maxLength = Math.max(...result.map((col) => col.length));
       result.forEach((col) => {
+        if (!col) return;
         while (col.length < maxLength) {
-          col.push(shuffled[Math.floor(Math.random() * shuffled.length)]);
+          const randomLogo = shuffled[Math.floor(Math.random() * shuffled.length)];
+          if (randomLogo) {
+            col.push(randomLogo);
+          }
         }
       });
 
