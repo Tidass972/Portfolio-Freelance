@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Fira_Code } from "next/font/google";
+import { texturina } from "@/lib/fonts";
 import "./globals.css";
 
 const inter = Inter({
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${inter.variable} ${firaCode.variable} antialiased`}
+        className={`${inter.variable} ${firaCode.variable} ${texturina.variable} antialiased`}
       >
         {children}
       </body>
