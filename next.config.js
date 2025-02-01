@@ -33,7 +33,7 @@ const nextConfig = {
       enabled: true
     },
     turbo: {
-      resolveAlias: true,
+      resolveAlias: {},
       loaders: {
         '.md': [
           {
