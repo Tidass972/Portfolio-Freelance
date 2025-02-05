@@ -2,14 +2,16 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
-  basePath: isProd ? '/Portfolio-dev' : '',
-  assetPrefix: isProd ? '/Portfolio-dev/' : '',
+  basePath: isProd ? '/Portfolio-Freelance' : '',
+  assetPrefix: isProd ? '/Portfolio-Freelance/' : '',
   swcMinify: true,
   compress: true,
   productionBrowserSourceMaps: false,
   poweredByHeader: false,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
