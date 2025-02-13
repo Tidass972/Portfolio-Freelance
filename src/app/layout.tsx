@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { texturina } from "@/lib/fonts";
 import "./globals.css";
 import { Providers } from "./providers";
 
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${texturina.variable} font-sans antialiased`}>
         <Providers>
           {children}
         </Providers>
