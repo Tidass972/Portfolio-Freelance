@@ -4,7 +4,7 @@ import { Send } from "lucide-react"
 import Button from "@/components/ui/button"
 import { Input } from "@/components/ui/input" 
 import { Textarea } from "@/components/ui/textarea"
-import { useForm, SubmitHandler } from "react-hook-form"
+import * as reactHookForm from "react-hook-form"
 import { toast } from "sonner"
 
 type FormValues = {
@@ -19,9 +19,9 @@ export default function ContactForm() {
     handleSubmit,
     formState: { errors },
     reset
-  } = useForm<FormValues>()
+  } = reactHookForm.useForm<FormValues>()
 
-  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+  const onSubmit: reactHookForm.SubmitHandler<FormValues> = async (data) => {
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
