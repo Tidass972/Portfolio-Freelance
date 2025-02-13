@@ -15,7 +15,7 @@ interface HeroSectionProps {
   backgroundImage: string;
 }
 
-export default function HeroSection({
+export function HeroSection({
   name = "David Debarieux",
   tagline = "Transformez votre activité avec un site vitrine irrésistible, conçu pour attirer et fidéliser vos clients.",
   backgroundImage = "/images/hero.jpg"
