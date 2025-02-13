@@ -1,3 +1,4 @@
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { texturina } from "@/lib/fonts";
@@ -16,9 +17,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="fr" suppressHydrationWarning>
       <body className={`${inter.variable} ${texturina.variable} font-sans antialiased`}>
