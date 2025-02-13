@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Fira_Code } from "next/font/google";
-import { texturina } from "@/lib/fonts";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers";
 
 const inter = Inter({
+  subsets: ["latin"],
   variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const firaCode = Fira_Code({
-  variable: "--font-fira-code",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -24,11 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
-      <body
-        className={`${inter.variable} ${firaCode.variable} ${texturina.variable} antialiased`}
-      >
-        {children}
+    <html lang="fr" suppressHydrationWarning>
+      <body className={`${inter.variable} font-sans antialiased`}>
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );
